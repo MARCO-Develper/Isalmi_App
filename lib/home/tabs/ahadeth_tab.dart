@@ -6,7 +6,7 @@ import 'package:islami_c13_friday/model/hadeth_model.dart';
 import 'package:islami_c13_friday/my_theme_data.dart';
 
 class AhadethTab extends StatefulWidget {
-  AhadethTab({super.key});
+  const AhadethTab({super.key});
 
   @override
   State<AhadethTab> createState() => _AhadethTabState();
@@ -38,7 +38,7 @@ class _AhadethTabState extends State<AhadethTab> {
                           arguments: hadeth);
                     },
                     child: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 12),
+                      margin: const EdgeInsets.symmetric(horizontal: 12),
                       child: Stack(
                         alignment: Alignment.topCenter,
                         children: [
@@ -51,8 +51,8 @@ class _AhadethTabState extends State<AhadethTab> {
                           Column(
                             children: [
                               Container(
-                                margin: EdgeInsets.only(top: 24),
-                                padding: EdgeInsets.symmetric(horizontal: 12),
+                                margin: const EdgeInsets.only(top: 24),
+                                padding: const EdgeInsets.symmetric(horizontal: 12),
                                 child: Text(
                                   hadeth.title,
                                   textAlign: TextAlign.center,
@@ -91,56 +91,11 @@ class _AhadethTabState extends State<AhadethTab> {
             }).toList(),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 16,
         )
       ],
     );
-    // return Column(
-    //   mainAxisAlignment: MainAxisAlignment.center,
-    //   children: [
-    //     Expanded(
-    //       child: ListView.separated(
-    //         separatorBuilder: (context, index) => SizedBox(
-    //           width: 16,
-    //         ),
-    //         scrollDirection: Axis.horizontal,
-    //         itemBuilder: (context, index) {
-    //           return Stack(
-    //             alignment: Alignment.topCenter,
-    //             children: [
-    //               Image.asset(
-    //                 "assets/images/hadeth_bg.png",
-    //               ),
-    //               Column(
-    //                 children: [
-    //                   Container(
-    //                     margin: EdgeInsets.only(top: 24),
-    //                     child: Text(
-    //                       ahadeth[index].title,
-    //                       style: Theme.of(context)
-    //                           .textTheme
-    //                           .bodyLarge!
-    //                           .copyWith(color: MyThemeData.blackColor),
-    //                     ),
-    //                   ),
-    //                   Text(
-    //                     ahadeth[index].content.first,
-    //                     style: Theme.of(context)
-    //                         .textTheme
-    //                         .bodySmall!
-    //                         .copyWith(color: Colors.white),
-    //                   )
-    //                 ],
-    //               )
-    //             ],
-    //           );
-    //         },
-    //         itemCount: ahadeth.length,
-    //       ),
-    //     )
-    //   ],
-    // );
   }
 
   loadHadethFile() {

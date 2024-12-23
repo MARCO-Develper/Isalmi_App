@@ -28,7 +28,7 @@ class SuraNameItem extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             width: 16,
           ),
           Expanded(

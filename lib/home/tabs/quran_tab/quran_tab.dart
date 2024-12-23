@@ -6,7 +6,7 @@ import 'package:islami_c13_friday/model/sura_model.dart';
 import 'package:islami_c13_friday/sura_details/sura_details.dart';
 
 class QuranTab extends StatefulWidget {
-  QuranTab({super.key});
+  const QuranTab({super.key});
 
   @override
   State<QuranTab> createState() => _QuranTabState();

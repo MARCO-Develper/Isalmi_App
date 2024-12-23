@@ -36,7 +36,7 @@ class OnBoardingScreen extends StatelessWidget {
       globalBackgroundColor: const Color(0xFF202020),
       dotsFlex: 3,
       dotsDecorator:  DotsDecorator(
-        color: Color(0xFF707070),
+        color: const Color(0xFF707070),
         activeColor: Theme.of(context).primaryColor,
       ),
       showDoneButton: true,

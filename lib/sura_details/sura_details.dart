@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_c13_friday/model/sura_model.dart';
 
 class SuraDetailsScreen extends StatefulWidget {
   static const String routeName = "SuraDetails";
 
-  SuraDetailsScreen({super.key});
+  const SuraDetailsScreen({super.key});
 
   @override
   State<SuraDetailsScreen> createState() => _SuraDetailsScreenState();
@@ -43,19 +42,19 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 32,
               ),
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: ListView.separated(
-                    separatorBuilder: (context, index) => SizedBox(
+                    separatorBuilder: (context, index) => const SizedBox(
                       height: 8,
                     ),
                     itemBuilder: (context, index) {
                       return Container(
-                          padding: EdgeInsets.symmetric(vertical: 8),
+                          padding: const EdgeInsets.symmetric(vertical: 8),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(18),
                             border: Border.all(
@@ -68,7 +67,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                                 textAlign: TextAlign.center,
                                 TextSpan(children: [
                                   TextSpan(
-                                    text: "${verses[index]}",
+                                    text: verses[index],
                                     style:
                                         Theme.of(context).textTheme.bodyMedium,
                                   ),

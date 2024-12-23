@@ -8,7 +8,7 @@ import 'package:islami_c13_friday/home/tabs/time_tab.dart';
 class HomeScreen extends StatefulWidget {
   static const String routeName = "home";
 
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -56,11 +56,11 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   List<Widget> tabs = [
-    QuranTab(),
-    AhadethTab(),
-    SebhaTab(),
-    RadioTab(),
-    TimeTab(),
+    const QuranTab(),
+    const AhadethTab(),
+    const SebhaTab(),
+    const RadioTab(),
+     const TimeTab(),
   ];
 
   String getBackgroundName(int index) {
